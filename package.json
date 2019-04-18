@@ -1,0 +1,11 @@
+{
+  "name": "photo361",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^4.0.2",
+    "jquery": "^3.4.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.3.1"
+  }
+}
