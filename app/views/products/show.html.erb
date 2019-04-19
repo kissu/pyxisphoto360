@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<pre>
+  <div id="photo"></div>
+  <%#= request.base_url + rails_representation_url(Product.last.images.last.variant(resize: "300x300").processed, only_path: true) %>
+</pre>
+<!-- <input type="checkbox" id="reverse-direction" name="reverse-direction" value="false">
+<label for="reverse-direction">Inverser la direction ?</label> -->
+
+<script>
+  // let checkbox = document.querySelector("input[name=reverse-direction]");
+  // let reverseDirection = false
+
+  $( document ).on('turbolinks:load', function() {
+    $("#photo").vc3dEye({
+      images: <%= @array.html_safe %>,
+      reversed: false
+    });
+
+  // checkbox.addEventListener('change', function() {
+    //  reverseDirection = this.checked === true ? true : false
+  // });
+  })
+</script>
+
+<%= javascript_pack_tag 'vc3dEye' %>

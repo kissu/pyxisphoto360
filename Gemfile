@@ -18,6 +18,11 @@ gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'jquery-rails'
+# is TOTALLY useless tbh
+gem 'image_processing', '~> 1.2'
+# may be needed for ActiveStorage variants
+gem 'pry', '~> 0.12.2'
+# beloved pry !
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
